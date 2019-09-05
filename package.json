@@ -2,10 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-    "main": "index.js",
-    "jest": {
-        "setupFiles": ["./tests/setup.js"]
-    },
+  "main": "index.js",
+  "jest": {
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
+  },
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js --ignore tests",
@@ -18,13 +20,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.188.0",
+    "aws-sdk": "^2.522.0",
+    "aws-signature-v4": "^1.4.0",
     "babel-jest": "24.8.0",
-    "jest": "24.8.0",
     "body-parser": "^1.17.2",
     "concurrently": "^3.5.0",
     "cookie-session": "^2.0.0-beta.2",
     "express": "^4.15.3",
+    "jest": "24.8.0",
     "migrate-mongoose": "^4.0.0",
     "mongoose": "^4.11.1",
     "nodemon": "^1.11.0",
@@ -33,6 +36,6 @@
     "path-parser": "^2.0.2",
     "puppeteer": "^1.19.0",
     "redis": "^2.8.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.3.3"
   }
 }
